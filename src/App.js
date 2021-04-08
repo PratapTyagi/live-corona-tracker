@@ -12,11 +12,12 @@ function App() {
       .then((info) => setData(info))
       .catch((err) => console.log(err));
   }, []);
+
   return (
     <div className={styles.container}>
       <Cards data={data} />
-      {/* <Charts />
-      <CountryPicker /> */}
+      <CountryPicker />
+      <Charts />
     </div>
   );
 }

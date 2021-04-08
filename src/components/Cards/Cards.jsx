@@ -54,7 +54,9 @@ function Cards({ data: { confirmed, deaths, recovered, lastUpdate } }) {
                 seperator=","
               />
             </Typography>
-            <Typography color="textSecondary">{lastUpdate}</Typography>
+            <Typography color="textSecondary">
+              {new Date(lastUpdate).toDateString()}
+            </Typography>
             <Typography varient="body2">Recovered cases</Typography>
           </CardContent>
         </Grid>
@@ -77,7 +79,9 @@ function Cards({ data: { confirmed, deaths, recovered, lastUpdate } }) {
                 seperator=","
               />
             </Typography>
-            <Typography color="textSecondary">{lastUpdate}</Typography>
+            <Typography color="textSecondary">
+              {new Date(lastUpdate).toDateString()}
+            </Typography>
             <Typography varient="body2">No. of deaths</Typography>
           </CardContent>
         </Grid>
