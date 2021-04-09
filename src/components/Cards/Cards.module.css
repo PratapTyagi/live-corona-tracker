@@ -15,3 +15,9 @@
 .recovered {
   border-bottom: 10px solid rgba(100, 250, 100, 0.5);
 }
+
+@media (max-width: 720px) {
+  .card {
+    margin: 2% 0 !important;
+  }
+}

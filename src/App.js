@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import CoronaImage from "./images/image.png";
+
 import styles from "./App.module.css";
 
 import { fetchData } from "./apis";
@@ -22,6 +24,11 @@ function App() {
 
   return (
     <div className={styles.container}>
+      <img
+        src={CoronaImage}
+        alt="Corona virus tracker"
+        className={styles.image}
+      />
       <CountryPicker handleCountryChange={handleCountryChange} />
       <Cards data={data} />
       <Charts data={data} country={countryName} />
